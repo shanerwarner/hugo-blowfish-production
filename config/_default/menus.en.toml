@@ -23,7 +23,18 @@
 [[main]]
   name = "ORA-Errors"
   pageRef = "ora-errors"  
-  weight = 30
+  weight = 30s
+
+[[main]]
+  name = "Windows"
+  pageRef = "ora-errors"  
+  weight = 30s
+
+[[main]]
+  name = "Linux"
+  pageRef = "ora-errors"  
+  weight = 30s
+
 
 #[[main]]
 #  name = "example sub-menu 1"
