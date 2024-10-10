@@ -27,12 +27,12 @@
 
 [[main]]
   name = "Windows"
-  pageRef = "ora-errors"  
+  pageRef = "windows"  
   weight = 30
 
 [[main]]
   name = "Linux"
-  pageRef = "ora-errors"  
+  pageRef = "linux"  
   weight = 30
 
 
