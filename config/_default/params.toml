@@ -47,15 +47,15 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showRecent = true
   showRecentItems = 10
   showMoreLink = true
-  showMoreLinkDest = "/posts/"
+  showMoreLinkDest = "/posts/,/linux/"
   cardView = false
   cardViewScreenWidth = true
   layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
   showDate = true
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
@@ -74,7 +74,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = false
+  showTableOfContents = true
   # showRelatedContent = false
   # relatedContentLimit = 3
   showTaxonomies = false
@@ -117,21 +117,21 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showHero = false
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showTableOfContents = true
   groupByYear = false
   cardView = false
   cardViewScreenWidth = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+  apiKey = "AIzaSyCBa_q0fJ5edftHlwiErROpxjAqCECs-Bw"
+  authDomain = "thewired-in-blog-bd14c.firebaseapp.com"
+  projectId = "thewired-in-blog-bd14c"
+  storageBucket = "thewired-in-blog-bd14c.appspot.com"
+  messagingSenderId = "658995724752"
+  appId = "1:658995724752:web:0b71d0de6247eab26279d5"
+  measurementId = "G-K1RQQLQ1S0"
 
 [fathomAnalytics]
   # site = "ABC12345"
@@ -144,8 +144,8 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   # enableTrackEvent = true
 
 [selineAnalytics]
-  # token = "XXXXXX"
-  # enableTrackEvent = true
+  token = "10a79059332cd4b"
+  enableTrackEvent = true
 
 [buymeacoffee]
   # identifier = ""

@@ -146,3 +146,87 @@ User Responded with: Y.
 Backing up files…
 ```
 {{< /lead >}}
+
+
+### Step 8: Startup the Database and Listener
+
+- Start the Listener
+```bash
+LSNRCTL START
+```
+- Start the Database
+
+[oracle@PRODDB oracle]$ `sqlplus / as sysdba`
+
+```sql
+SQL*Plus: Release 19.0.0.0.0 – Production on Tue Nov 24 04:27:48 2020
+Version 19.9.0.0.0
+Copyright (c) 1982, 2020, Oracle. All rights reserved.
+Connected to an idle instance.
+```
+
+```sql
+SQL> startup
+```
+
+```
+ORACLE instance started.
+Total System Global Area 9865000808 bytes
+Fixed Size 12445544 bytes
+Variable Size 1509949440 bytes
+Database Buffers 8321499136 bytes
+Redo Buffers 21106688 bytes
+Database mounted.
+Database opened.
+```
+
+### Step 9: Execute post patch steps and run datapatch command
+
+```bash
+/u01/app/oracle/product/19.3/db_home/OPatch/opatch/datapatch -verbos
+```
+
+### Step 10: Check the `V$DBA_REGISTRY_SQLPATCH`.
+
+- Login to the Database
+
+[oracle@PRODDB oracle]$ `sqlplus / as sysdba`
+
+```sql
+set LINES 600
+SET LINESIZE 500
+SET PAGESIZE 1000
+SET SERVEROUT ON
+SET LONG 2000000
+
+select patch_id, action, status, version, from dba_registry_sqlpatch;
+```
+or
+```sql
+select patch_id, action, status, version, from dba_registry_sqlpatch where patch_id in ('35320081', '35354406');
+```
+or
+```sql
+SET LINESIZE 500
+SET PAGESIZE 1000
+SET SERVEROUT ON
+SET LONG 2000000
+COLUMN action_time FORMAT A12
+COLUMN action FORMAT A10
+COLUMN patch_type FORMAT A10
+COLUMN description FORMAT A32
+COLUMN status FORMAT A10
+COLUMN version FORMAT A10
+spool check_patches_19c.txt
+
+select CON_ID,
+TO_CHAR(action_time, ‘YYYY-MM-DD’) AS action_time,
+PATCH_ID,
+PATCH_TYPE,
+ACTION,
+DESCRIPTION,
+SOURCE_VERSION,
+TARGET_VERSION
+from CDB_REGISTRY_SQLPATCH
+order by CON_ID, action_time, patch_id;
+```
