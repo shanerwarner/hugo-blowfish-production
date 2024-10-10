@@ -1,5 +1,5 @@
 ---
-title: "Welcome to thewired.in!"
+title: "Oracle RAC Posts!"
 description: "This page was built using the Blowfish theme for Hugo."
 ---
 

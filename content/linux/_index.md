@@ -1,6 +1,6 @@
 ---
 title: "Linux"
-description: "Problems and Solutions to ORA-Errors."
+description: "Linux Tips, Tricks, and Shell Scripts."
 ---
 
 Problems and Solutions to ORA-Errors.
