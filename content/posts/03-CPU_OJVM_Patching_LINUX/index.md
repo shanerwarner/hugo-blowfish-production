@@ -11,8 +11,6 @@ showDate: true
 showSummary: true
 ---
 
-## Description:-
-
 This article we are going to see steps used to apply the latest Oracle 19c Database Release Update 19.20.0.0.0 & OJVM elease Update 19.20.0.0.0
 
 - 35320081 - DATABASE RELEASE UPDATE 19.20.0.0.0
