@@ -10,8 +10,9 @@ showDate: true
 showSummary: true
 ---
 
-## Create a Windows Server 2025 Virtual Machine from the Following Guide
-{{< article link="/windows/02-windows_srv_2025_vm_guide/" >}}
+# Create a Windows Server 2025 Virtual Machine from the Following Guide
+
+{{< article link="/windows/02-windows_srv_2025_vm_guide/">}}
 ---
 
 ---
