@@ -1,5 +1,5 @@
 ---
-title: "Step-by-step Guide to creating a Windows Server 2025 VM for Oracle RAC ASM Disks"
+title: "Step-by-step Guide to creating a Windows Server 2025 Virtual Machine"
 date: 2024-10-09
 draft: false
 description: "Windows Server 2025 VM for Oracle RAC ASM Disks"
